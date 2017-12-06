@@ -280,6 +280,18 @@ var res = peri.split("  . ");
 
 
 var arr = res.filter(function(e){return e}); 
+     var lengo = arr.length / 2;
+    for(var t = 1; t < lengo; t += 2){
+        if(arr[t].indexOf("/") > -1){
+            var h = arr[t].indexOf("/");
+            
+            var zazz = arr[t].substring(0 , arr[t].indexOf('/'));
+            arr.splice(t, 1, zazz);
+                
+            
+        }
+        
+    }
   
      
 
